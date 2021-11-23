@@ -1,37 +1,133 @@
-## Welcome to GitHub Pages
+	/* GENERAL SITE INFORMATION  */
+	// Name of your server/community
+	$name = "California State Roleplay | CSRP |";
 
-You can use the [editor on GitHub](https://github.com/caldwell311/Caldwell31.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+	// Link to the website, with trailing slash
+	$domain = "https://caldwell31.github.io/";
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	// Logo of your server/community
+	$logo = $domain."images/logo.png";
 
-### Markdown
+	// Description of your server/community
+	$description = "California State RP is looking for members who play Fivem and knows how to RP https://discord.gg/qG8kvBSyG7";
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	// Discord Guild ID
+	$guildid = "911124604532178985";
 
-```markdown
-Syntax highlighted code block
+	// Main Color
+	$colorhex = "#0f7cff";
 
-# Header 1
-## Header 2
-### Header 3
+	// YouTube video ID (If you don't have/want one, just keep the value empty)
+	$youtubeid = "";
 
-- Bulleted
-- List
+	// Background image (Will appear on mobile and if YouTube video isn't defined)
+	$backgroundimg = $domain."images/bg.png";
 
-1. Numbered
-2. List
+	// Discord invite link
+	$discord = "discord";
 
-**Bold** and _Italic_ and `Code` text
+	// Server IP
+	$ip = "sub.yourdomain.tld";
 
-[Link](url) and ![Image](src)
-```
+	// Link one
+	$link1name = "Home";
+	$link1 = $domain;
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+	// Link two
+	$link2name = "About";
+	$link2 = $domain."about";
 
-### Jekyll Themes
+	// Link three
+	$link3name = "Application";
+	$link3 = $domain."application";
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/caldwell311/Caldwell31.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+	// Middle link
+	$mainbuttonname = "Discord";
+	$mainbutton = $discord /*"" If you want to do a custom link, remove the /* */;
 
-### Support or Contact
+	// Link four
+	$link4name = "Status";
+	$link4 = $domain."status";
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+	// Link five
+	$link5name = "Gallery";
+	$link5 = $domain."gallery";
+
+	// Link six
+	$link6name = "News";
+	$link6 = $domain."news";
+	/* END GENERAL SITE INFORMATION */
+
+	/* START ABOUT PAGE */
+	$about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor quis lorem nec convallis. Sed elementum, nulla gravida feugiat congue, nisi sem dapibus ex, vel iaculis ex nunc sit amet risus. Nulla nulla lorem, pulvinar ut rutrum a, iaculis ut sapien. Ut quis commodo dolor. Nullam ac diam imperdiet, dapibus est sed, venenatis mauris. Aliquam bibendum facilisis nibh, quis molestie magna luctus a. Sed leo arcu, suscipit a eleifend sit amet, auctor sed elit.";
+	/* END ABOUT PAGE */
+
+	/* START APPLICATION PAGE */
+	// Use Recaptcha v2 for the form. You can create a Recaptcha key here: https://www.google.com/recaptcha/admin/create
+	$recaptchasecretkey = "#";
+	$recaptchasitekey = "#";
+	$webhookurl = "https://discordapp.com/api/webhooks/######";
+	$departments = [
+		"San Andreas State Police",
+		"Blaine County Sheriff's Office",
+		"Los Santos Police Department",
+		"Los Santos Fire Department",
+		"Civilian",
+	];
+	/* END APPLICATION PAGE */
+
+	/* START STATUS PAGE */
+	// 0 = automatic, 1 = operational, 2 = issues, 3 = offline
+	$servers = [
+
+			"IP" => "jakehamblin.com",
+			"port" => "30120",
+			"status" => "0",
+		],
+	];
+	/* END STATUS PAGE */
+
+	/* START GALLERY PAGE */
+	$gallery = [
+		"https://i.imgur.com/ABcLzqm.jpg",
+		"https://i.imgur.com/2kBFbgF.jpg",
+		"https://i.imgur.com/ZF0k8K5.jpg",
+		"https://i.imgur.com/J36Nb1Y.jpg",
+		"https://i.imgur.com/HjxIAmg.jpg",
+	];
+	/* END GALLERY PAGE */
+
+	/* START NEWS PAGE */
+	$news = [
+		"Testing One" => [
+			"message" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor quis lorem nec convallis. Sed elementum, nulla gravida feugiat congue, nisi sem dapibus ex, vel iaculis ex nunc sit amet risus. Nulla nulla lorem, pulvinar ut rutrum a, iaculis ut sapien. Ut quis commodo dolor. Nullam ac diam imperdiet, dapibus est sed, venenatis mauris. Aliquam bibendum facilisis nibh, quis molestie magna luctus a. Sed leo arcu, suscipit a eleifend sit amet, auctor sed elit.",
+			"name" => "Jake Hamblin",
+			"date" => "06/30/2020", /* In M-D-Y format */
+		],
+		"Testing Two" => [
+			"message" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor quis lorem nec convallis. Sed elementum, nulla gravida feugiat congue, nisi sem dapibus ex, vel iaculis ex nunc sit amet risus. Nulla nulla lorem, pulvinar ut rutrum a, iaculis ut sapien. Ut quis commodo dolor. Nullam ac diam imperdiet, dapibus est sed, venenatis mauris. Aliquam bibendum facilisis nibh, quis molestie magna luctus a. Sed leo arcu, suscipit a eleifend sit amet, auctor sed elit.",
+			"name" => "Jake Hamblin",
+			"date" => "06/30/2020", /* In M-D-Y format */
+		],
+	];
+	/* END NEWS PAGE! */
+
+
+	/* RANDOM PHP FUNCTIONS AND JOBS */
+	// Convert HEX provided to RGB
+	list($r, $g, $b) = sscanf($colorhex, "#%02x%02x%02x");
+	$colorrgb = $r.", ".$g.", ".$b;
+
+	// Make color darked
+	$darkerpercent = ".5";
+	$colordarker = $r*$darkerpercent.", ".$g*$darkerpercent.", ".$b*$darkerpercent;
+
+	// Used for navbar links
+	$linkarray = array("link1" => "$link1name#$link1", "link2" => "$link2name#$link2", "link3" => "$link3name#$link3", "mainbutton" => "$mainbuttonname#$mainbutton", "link4" => "$link4name#$link4", "link5" => "$link5name#$link5", "link6" => "$link6name#$link6");
+
+	// Discord JSON decode
+	$jsonIn = file_get_contents('https://discordapp.com/api/guilds/'.$guildid.'/widget.json');
+    $JSON = json_decode($jsonIn, true);
+    $membersCount = count($JSON['members']);
+?>
+

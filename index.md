@@ -1,21 +1,11 @@
-	/* GENERAL SITE INFORMATION  */
-	// Name of your server/community
-	$name = "California State Roleplay | CSRP |";
 
-	// Link to the website, with trailing slash
-	$domain = "https://caldwell31.github.io/";
+	 California State Roleplay | CSRP |
 
-	// Logo of your server/community
-	$logo = $domain."images/logo.png";
+
 
 	// Description of your server/community
 	$description = "California State RP is looking for members who play Fivem and knows how to RP https://discord.gg/qG8kvBSyG7";
 
-	// Discord Guild ID
-	$guildid = "911124604532178985";
-
-	// Main Color
-	$colorhex = "#0f7cff";
 
 	// YouTube video ID (If you don't have/want one, just keep the value empty)
 	$youtubeid = "";
@@ -73,61 +63,4 @@
 		"Los Santos Police Department",
 		"Los Santos Fire Department",
 		"Civilian",
-	];
-	/* END APPLICATION PAGE */
-
-	/* START STATUS PAGE */
-	// 0 = automatic, 1 = operational, 2 = issues, 3 = offline
-	$servers = [
-
-			"IP" => "jakehamblin.com",
-			"port" => "30120",
-			"status" => "0",
-		],
-	];
-	/* END STATUS PAGE */
-
-	/* START GALLERY PAGE */
-	$gallery = [
-		"https://i.imgur.com/ABcLzqm.jpg",
-		"https://i.imgur.com/2kBFbgF.jpg",
-		"https://i.imgur.com/ZF0k8K5.jpg",
-		"https://i.imgur.com/J36Nb1Y.jpg",
-		"https://i.imgur.com/HjxIAmg.jpg",
-	];
-	/* END GALLERY PAGE */
-
-	/* START NEWS PAGE */
-	$news = [
-		"Testing One" => [
-			"message" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor quis lorem nec convallis. Sed elementum, nulla gravida feugiat congue, nisi sem dapibus ex, vel iaculis ex nunc sit amet risus. Nulla nulla lorem, pulvinar ut rutrum a, iaculis ut sapien. Ut quis commodo dolor. Nullam ac diam imperdiet, dapibus est sed, venenatis mauris. Aliquam bibendum facilisis nibh, quis molestie magna luctus a. Sed leo arcu, suscipit a eleifend sit amet, auctor sed elit.",
-			"name" => "Jake Hamblin",
-			"date" => "06/30/2020", /* In M-D-Y format */
-		],
-		"Testing Two" => [
-			"message" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor quis lorem nec convallis. Sed elementum, nulla gravida feugiat congue, nisi sem dapibus ex, vel iaculis ex nunc sit amet risus. Nulla nulla lorem, pulvinar ut rutrum a, iaculis ut sapien. Ut quis commodo dolor. Nullam ac diam imperdiet, dapibus est sed, venenatis mauris. Aliquam bibendum facilisis nibh, quis molestie magna luctus a. Sed leo arcu, suscipit a eleifend sit amet, auctor sed elit.",
-			"name" => "Jake Hamblin",
-			"date" => "06/30/2020", /* In M-D-Y format */
-		],
-	];
-	/* END NEWS PAGE! */
-
-
-	/* RANDOM PHP FUNCTIONS AND JOBS */
-	// Convert HEX provided to RGB
-	list($r, $g, $b) = sscanf($colorhex, "#%02x%02x%02x");
-	$colorrgb = $r.", ".$g.", ".$b;
-
-	// Make color darked
-	$darkerpercent = ".5";
-	$colordarker = $r*$darkerpercent.", ".$g*$darkerpercent.", ".$b*$darkerpercent;
-
-	// Used for navbar links
-	$linkarray = array("link1" => "$link1name#$link1", "link2" => "$link2name#$link2", "link3" => "$link3name#$link3", "mainbutton" => "$mainbuttonname#$mainbutton", "link4" => "$link4name#$link4", "link5" => "$link5name#$link5", "link6" => "$link6name#$link6");
-
-	// Discord JSON decode
-	$jsonIn = file_get_contents('https://discordapp.com/api/guilds/'.$guildid.'/widget.json');
-    $JSON = json_decode($jsonIn, true);
-    $membersCount = count($JSON['members']);
-?>
 
